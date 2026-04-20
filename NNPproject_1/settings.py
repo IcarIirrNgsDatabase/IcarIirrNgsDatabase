@@ -18,10 +18,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-$6wcmd*9c+volqmd0^5j*w%(c39j-v9$g6-qoiqhu#qfto&1w5'
+SECRET_KEY = 'django-insecure-$***************************************5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -73,16 +72,15 @@ WSGI_APPLICATION = 'NNPproject_1.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
     'default': {
         'ENGINE': 'mssql',
         'NAME': 'NNP_rice',
-        'USER': 'nnpproject1',
-        'PASSWORD': 'nnpproject@1',
+        'USER': 'nnpproject1234',
+        'PASSWORD': '***************',
         'HOST': 'DESKTOP-6ALONIN\\SQLEXPRESS',
-        'PORT': '1433',  
+        'PORT': '1234',  
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',
         },
@@ -92,7 +90,7 @@ DATABASES = {
 
 
 # Password validation
-# https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
+#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -111,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
-# https://docs.djangoproject.com/en/5.0/topics/i18n/
+
 
 LANGUAGE_CODE = 'en-us'
 
@@ -123,12 +121,12 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.0/howto/static-files/
+
 
 STATIC_URL = 'static/'
 
 # Default primary key field type
-# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
+#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
