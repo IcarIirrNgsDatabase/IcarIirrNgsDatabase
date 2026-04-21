@@ -9,11 +9,6 @@ def index(request):
     return render(request, 'index.html')
     #return HttpResponse("Welcome to Home page, Kanika")
 
-
-from django.shortcuts import render
-from django.db.models import Q
-from .models import NNPTable1  # Ensure this is your actual model name
-
 def Search(request):
     query = request.GET.get('q', '').strip()  # Get user input and remove extra spaces
     results = []    #results = NNPTable1.objects.all()  # Default: Get all results
